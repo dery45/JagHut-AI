@@ -1,0 +1,119 @@
+# Whole data directory (all runtime-generated files)
+data/
+
+# Explicit: environment file inside config/
+config/.env
+
+# Python virtual environments
+venv/
+.env/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ChromaDB / Persistent Data Directories
+data/db/
+data/raw_dataset/
+data/raw_pdfs/
+data/logs/
+chroma/
+*.sqlite3
+weather_cache.sqlite
+.weather_cache.sqlite
+
+# Environment variables & secrets
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+*.env.backup
+
+# Python bytecode & cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Distribution / packaging
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.manifest
+*.spec
+
+# Logs & temporary files
+*.log
+*.logs
+*.tmp
+*.bak
+*.swp
+*~
+
+# SUGI query logs — berisi data percakapan user, jangan di-commit
+logs/
+!logs/.gitkeep
+
+# BM25 cache — bisa di-rebuild, tidak perlu di-commit
+*.pkl
+bm25_cache.pkl
+
+# Ollama & model-related
+ollama/
+models/
+
+# macOS junk
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows junk
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Testing & coverage
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+*.coverage.*
+coverage/
+
+# Dependency management
+Pipfile.lock
+poetry.lock
+
+# Misc project-specific
+*.DS_Store
+*.bak
+*.backup
+temp/
+tmp/
+
+# User data & platform-specific databases
+data/users.json
+data/cli_user.txt
+data/bm25_cache.pkl
+data/db/bm25_cache.pkl

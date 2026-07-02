@@ -1,0 +1,5 @@
+# requirements_telegram.txt
+# Install tambahan untuk Telegram bot integration
+# Jalankan: pip install -r requirements_telegram.txt
+
+python-telegram-bot==20.7

@@ -1,0 +1,43 @@
+# Core LangChain
+langchain>=0.3
+langchain-core>=0.3
+langchain-community>=0.3
+langchain-text-splitters>=0.3
+langchain-classic>=0.1
+
+# Model integrations
+langchain-ollama>=0.2
+langchain-chroma>=0.1
+langchain-huggingface>=0.1
+
+# Vector DB
+chromadb>=0.5
+
+# Embeddings / Reranker
+sentence-transformers>=3.0
+
+# BM25
+rank_bm25>=0.2
+
+# PDF loading
+pypdf>=4.0
+
+# Data processing
+pandas>=2.0
+tqdm>=4.0
+
+# File watching (replaces 10s polling loop)
+watchdog>=4.0
+
+# Plant API & environment
+python-dotenv>=1.0
+requests>=2.32
+
+# Weather API (Open-Meteo)
+openmeteo-requests>=0.3
+requests-cache>=1.2
+retry-requests>=2.0
+
+# Database & Insights
+pymongo[srv]>=4.0
+certifi>=2024.2.2

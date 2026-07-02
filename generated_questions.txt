@@ -1,0 +1,14 @@
+Berikut adalah daftar 10 pertanyaan yang dapat ditulis ke dalam sistem RAG berdasarkan data yang disediakan:
+
+1. Apa total cadangan pangan yang tersedia di Aceh pada bulan Januari 2025? (Tampilkan nilai CPPD_Ton untuk Kode_Wilayah 11)
+2. Di mana wilayah dengan cadangan pangan paling rendah pada bulan Januari 2025? (Tampilkan nilai CPPD_Ton dan Wilayah untuk Kode_Wilayah dengan nilai terendah)
+3. Apa perbedaan besar antara cadangan pangan Sumatera Utara dan Sumatera Barat pada bulan Januari 2025? (Tampilkan nilai CPPD_Ton untuk Kode_Wilayah 12 dan 13)
+4. Apa total cadangan pangan yang tersedia di Kepulauan Bangka Belitung pada bulan Januari 2025? (Tampilkan nilai CPPD_Ton untuk Kode_Wilayah 19)
+5. Apa nilai cadangan pangan DKI Jakarta pada bulan Januari 2025? (Tampilkan nilai CPPD_Ton untuk Kode_Wilayah 31)
+6. Apa perbedaan antara cadangan pangan Jawa Barat dan Jawa Timur pada bulan Januari 2025? (Tampilkan nilai CPPD_Ton untuk Kode_Wilayah 32 dan 35)
+7. Apa total cadangan pangan yang tersedia di Sumatera Selatan pada bulan Januari 2025? (Tampilkan nilai CPPD_Ton untuk Kode_Wilayah 16)
+8. Di mana wilayah dengan cadangan pangan tertinggi pada bulan Januari 2025? (Tampilkan nilai CPPD_Ton dan Wilayah untuk Kode_Wilayah dengan nilai tertinggi)
+9. Apa nilai cadangan pangan Bengkulu pada bulan Januari 2025? (Tampilkan nilai CPPD_Ton untuk Kode_Wilayah 17)
+10. Apa perbandingan antara cadangan pangan Lampung dan Riau pada bulan Januari 2025? (Tampilkan nilai CPPD_Ton untuk Kode_Wilayah 18 dan 14)
+
+Semoga daftar pertanyaan ini dapat membantu!
