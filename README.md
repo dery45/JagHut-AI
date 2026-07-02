@@ -32,7 +32,7 @@ An AI-powered ESG, climate, and sustainability intelligence platform designed fo
   - Forest IQ datasets via RAG (company metrics, financial data)
 - **Long-term Memory** → Session summaries stored in ChromaDB for multi-turn context
 - **Daily Insight Engine** → Sends ESG sector insights, climate analysis, and company intelligence to MongoDB every 12 hours
-- **Company Insight Engine** → Generates per-company ForestIQ insights & recommendations via `qwen2.5:1.5b`, stored in separate `insight` & `Recomendation` columns (400-500 char each, sentence-boundary safe). Polls for changes every 300s, incremental by default
+- **Company Insight Engine** → Generates per-company ForestIQ insights & recommendations via `qwen2.5:1.5b`, stored in separate `insight` & `Recomendation` columns (target ~400 chars, hard cap 500, sentence-boundary safe). Polls for changes every 300s, incremental by default
 - **INI-based Configuration** → All ESG keywords & entity maps in `config/settings/`, no code changes needed
 - **Scope Guard** → Only answers ESG, sustainability, and environmental topics
 
@@ -65,7 +65,7 @@ An AI-powered ESG, climate, and sustainability intelligence platform designed fo
 ### 2. Setup
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/dery45/JagHut-AI
 cd JagaHutan
 
 python -m venv venv
@@ -113,6 +113,7 @@ Inside CLI or Telegram bot, type `!companies` to trigger company insight generat
 - All company insight generation is wrapped in try-except — one company failure won't crash the pipeline
 - `python services/company_insight_engine.py --now` — incremental one-shot (no reset)
 - `python services/company_insight_engine.py --once` — reset & regenerate all
+- MongoDB & ChromaDB connection retry at module level prevents service crash on first connection timeout
 
 ## Project Architecture
 
@@ -152,8 +153,10 @@ JagaHutan/
 │   ├── raw_pdfs/                  # ESG PDF documents
 │   └── users.json                 # User profiles
 ├── tests/                         # Testing utilities
+├── .gitignore                     # Git ignore rules
 ├── start_all.py                   # Master deployment script
 ├── README.md
+├── feature and function.md        # Comprehensive feature & function docs
 └── requirements.txt
 ```
 
